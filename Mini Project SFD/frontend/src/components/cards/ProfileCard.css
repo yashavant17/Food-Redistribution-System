@@ -1,0 +1,106 @@
+.profile-card {
+  margin-bottom: var(--space-xl);
+  padding: 0;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  border-bottom: 1px solid #F0F0F0;
+  position: relative;
+  background: var(--color-primary-50);
+}
+
+.profile-avatar {
+  width: 64px;
+  height: 64px;
+  background: var(--color-primary);
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+}
+
+.profile-titles {
+  flex: 1;
+}
+
+.profile-titles h2 {
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+}
+
+.profile-role-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  background: white;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+
+.edit-btn {
+  background: white;
+  border: 1px solid #E0E0E0;
+}
+
+.edit-btn:hover {
+  border-color: var(--color-primary);
+}
+
+.profile-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+  padding: var(--space-lg);
+}
+
+.detail-item {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.detail-item.full-width {
+  grid-column: 1 / -1;
+}
+
+.detail-icon {
+  margin-top: 2px;
+  font-size: 20px;
+  color: var(--text-muted);
+}
+
+.detail-item strong {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+
+.detail-item p {
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+@media (max-width: 600px) {
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .profile-details-grid {
+    grid-template-columns: 1fr;
+  }
+}

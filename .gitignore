@@ -1,0 +1,15 @@
+node_modules/
+.env
+*.log
+dist/
+build/
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+backend/data/
+mongodb_data/
+*.local

@@ -1,0 +1,18 @@
+{
+  "name": "mini-project-sfd",
+  "version": "1.0.0",
+  "description": "A full-stack web application that connects food donors with NGOs and volunteers to reduce food waste using intelligent matching, real-time updates, and location-based services.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "dev:admin": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\" \"npm run dev --prefix admin-dashboard\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

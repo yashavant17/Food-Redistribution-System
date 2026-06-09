@@ -1,0 +1,27 @@
+.map-wrapper {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  border: 1px solid #EEEEEE;
+}
+
+.map-popup {
+  min-width: 180px;
+}
+
+.map-popup h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--text-primary);
+}
+
+.map-popup p {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.map-popup .badge {
+  margin-top: 6px;
+}
